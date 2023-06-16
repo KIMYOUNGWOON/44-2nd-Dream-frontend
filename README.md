@@ -1,22 +1,5 @@
 # 44-2nd-Dream-backend 경매 플랫폼 제작 프로젝트
 
-<img src=https://user-images.githubusercontent.com/121158293/236659809-3ff8df57-9fe3-4515-93da-a2581b72d309.png width="280" height="65">
-
-<br>
-
-## 프론트앤드
-김영운([**Github**](https://github.com/), [회고록]())<br>
-조건호([**Github**](https://github.com/), [회고록]())<br>
-최선영([**Github**](https://github.com/suny0ung), [회고록](https://note-ballpen.tistory.com/24))<br>
-
-<br>
-
-## 백앤드
-박세익([**Github**](https://github.com/), [회고록](https://walwaldev.tistory.com/))<br>
-장다희([**Github**](https://github.com/walwald), [회고록](https://walwaldev.tistory.com/))<br>
-김민서([**Github**](https://github.com/), [회고록](https://walwaldev.tistory.com/))<br>
-송석준([**Github**](https://github.com/), [회고록](https://walwaldev.tistory.com/))<br>
-
 <br>
 
 ## 📍프로젝트 기간 & 인원
