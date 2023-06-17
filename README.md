@@ -92,8 +92,8 @@
 
 ### 5. 구매/판매 동의 페이지
   
-![Purchase](https://user-images.githubusercontent.com/126956430/246590599-f72fbf91-c0e8-48dc-870a-6617bad26149.gif)
-![sale](https://user-images.githubusercontent.com/126956430/246590594-b036da4e-9665-4450-9b0b-0b11c4df62aa.gif)
+![Purchase Agree](https://user-images.githubusercontent.com/126956430/246590599-f72fbf91-c0e8-48dc-870a-6617bad26149.gif)
+![sale Agree](https://user-images.githubusercontent.com/126956430/246590594-b036da4e-9665-4450-9b0b-0b11c4df62aa.gif)
 
 - 사용자가 구매 또는 판매 버튼을 클릭하는 경우, 하나의 컴포넌트에서 구매 동의 페이지와 판매 동의 페이지를 각각의 UI로 표시하는 기능을 구현했습니다. 이를 통해 컴포넌트 재사용을 활용하여 중복 코드를 최소화했으며, 코드의 가독성을 높이고 유지 보수성을 개선했습니다. 코드의 재사용을 통해 개발 시간을 단축하고, 일관된 사용자 경험을 제공하는 것에 초점을 맞추었습니다.
 - 구매 동의 페이지와 판매 동의 페이지에서는 사용자가 거래를 신중하게 결정할 수 있도록 첫 번째 동의에 체크하면 모달 창이 나타나고, 사용자에게 주의 메시지를 한 번 더 알려줍니다. 또한, 사용자가 모든 내용에 동의해야만 다음 페이지로 진행할 수 있는 버튼을 활성화하여 사용자가 명확한 동의 의사를 표시하도록 구현했습니다.
@@ -109,7 +109,56 @@
 - 판매 입찰의 경우, 사용자는 입찰가를 입력하고 해당 입력 필드에서 포커스 아웃할 때 자동으로 수수료가 계산됩니다. 또한, 최종 정산 금액은 입찰가에서 수수료가 차감된 금액으로 표시됩니다.
   
 <br>
+
+### 7. 결제 및 완료 페이지
   
+![payment](https://user-images.githubusercontent.com/126956430/246594743-8bea1c99-8ac3-47db-a69d-26a5bdc2c65b.gif)
+![success](https://user-images.githubusercontent.com/126956430/246594747-b03a11d2-13af-48e6-9b99-55f3546c9a93.gif)
+
+- 토스 API를 활용하여 테스트 결제를 구현하고, 결제가 완료되면 상세 내역을 보여주는 기능을 구현했습니다.
+  
+<br>
+
+### 8. 관심 페이지
+  
+![interest](https://blog.kakaocdn.net/dn/sobCN/btsevmCn0r1/TdmrhJypXfRxqeLpFTrjFK/img.gif)
+
+- 사용자가 관심상품 등록 버튼을 누르면 Like API path parameter에 productId를 포함시켜 요청을 보내 해당 유저의 관심상품으로 등록합니다. 이때 헤더에 accessToken을 담아서 서버에 GET 요청을 보냅니다.
+
+- 동일한 product와 동일한 user에 대해 API가 재실행될 경우 관심상품에서 삭제합니다.
+  
+<br>
+
+
+### 8. 이벤트 페이지
+  
+![event](https://blog.kakaocdn.net/dn/bauASO/btsetIMqyhM/lJh82SUmpGO1M6KMLrbO6K/img.gif)
+
+- 어린이날 이벤트에 맞게 React-Spring과 같은 라이브러리를 활용하여 다양한 애니메이션 효과를 구현했습니다. 특히, 자동차 레고에 멋있는 애니메이션 효과를 적용하여 이목을 집중시켜 사용자들은 이를 통해 시각적으로 매력적인 경험을 할 수 있습니다.
+- 하단에는 간단한 퀴즈 이벤트를 구현하여 정답을 입력하면 자동으로 응모되는 기능을 추가했습니다. 이를 통해 사용자는 퀴즈에 참여하고 응모 과정을 간편하게 진행할 수 있습니다.
+- 어린이날 밤 12시에 맞춰 타이머 기능도 추가로 구현했습니다. 이를 통해 사용자는 남은 시간을 실시간으로 확인할 수 있으며, 이벤트의 마감 시간을 알 수 있습니다.
+  
+<br>
+
+
+   ## 제품 상세 페이지 주요 기능
+   
+### 1. 시세 그래프
+  
+![graph](https://blog.kakaocdn.net/dn/55sqm/btses4WxcIw/Uq6DB0gA2kqC2EEYaUko11/img.gif)
+
+- Chart.js 라이브러리를 사용하여 날짜 데이터와 해당 날짜에 체결된 가격 데이터를 활용하여 동적 시세 그래프를 구현하였습니다. 사용자는 원하는 기간을 선택할 수 있으며, 선택한 기간에 따라 그래프가 실시간으로 업데이트됩니다. 이를 통해 사용자들은 선택한 기간 동안의 시세 변동을 시각적으로 쉽게 파악할 수 있습니다.
+- 사용자가 원하는 기간을 선택하면 해당 기간의 날짜 데이터와 해당 날짜에 체결된 가격 데이터를 가져와서 Chart.js를 사용하여 그래프를 그립니다.
+  
+<br>
+
+### 2. 사진 후기 업로드
+  
+![review](https://blog.kakaocdn.net/dn/clKyOh/btsey6SCi4N/kSl3QkhdDWVR31QqSTmCZK/img.gif)
+
+- 이미지 업로드 부분에서는 input 태그를 사용하지 않고 React Dropzone 라이브러리를 활용하여 이미지 업로드와 미리보기 기능을 구현하였습니다. 사용자는 직접 이미지를 찾아서 업로드할 수도 있고, 이미지를 드래그 앤 드롭하여 업로드할 수도 있습니다.
+  
+<br>
 
   
    ## 6. 느낀점/회고
