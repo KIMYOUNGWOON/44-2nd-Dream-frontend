@@ -149,7 +149,7 @@ DREAM는 KREAM의 핵심 가치를 모델링하여 개발을 진행했습니다.
    
 ### 1. 시세 그래프
   
-![graph](https://blog.kakaocdn.net/dn/55sqm/btses4WxcIw/Uq6DB0gA2kqC2EEYaUko11/img.gif)
+![graph](https://github.com/KIMYOUNGWOON/44-2nd-Dream-frontend/assets/126956430/77451c23-8a10-4bfb-9ac3-7b81b865b715)
 
 - Chart.js 라이브러리를 사용하여 날짜 데이터와 해당 날짜에 체결된 가격 데이터를 활용하여 동적 시세 그래프를 구현하였습니다. 사용자는 원하는 기간을 선택할 수 있으며, 선택한 기간에 따라 그래프가 실시간으로 업데이트됩니다. 이를 통해 사용자들은 선택한 기간 동안의 시세 변동을 시각적으로 쉽게 파악할 수 있습니다.
 - 사용자가 원하는 기간을 선택하면 해당 기간의 날짜 데이터와 해당 날짜에 체결된 가격 데이터를 가져와서 Chart.js를 사용하여 그래프를 그립니다.
