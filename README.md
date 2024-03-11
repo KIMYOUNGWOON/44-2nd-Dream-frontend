@@ -84,7 +84,7 @@ DREAM는 KREAM의 핵심 가치를 모델링하여 개발을 진행했습니다.
   
 <br>
 
-### 4. 제품 상품 페이지
+### 4. 상세 페이지
   
 ![Detail](https://blog.kakaocdn.net/dn/bd5eNF/btsesb2eTIL/nWKBIPHfckqLnHw4MUEYm1/img.gif)
 
